@@ -8,7 +8,7 @@ from fastapi import FastAPI
 from configuration.bean_container import MainContainer
 from configuration.cors_config import get_cors_middleware
 from controller import customer_controller
-from route.api_router import router
+from configuration.api_router import router
 
 load_dotenv()
 FILE_PATH_URL = os.getenv("FILE_PATH_URL")
